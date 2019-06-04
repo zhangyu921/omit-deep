@@ -5,7 +5,7 @@ var unset = require('unset-value');
 
 module.exports = function omitDeep(value, keys) {
   if (typeof value === 'undefined') {
-    return {};
+    return undefined;
   }
 
   if (Array.isArray(value)) {
